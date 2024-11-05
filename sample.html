@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レスポンシブ表の例</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        @media (max-width: 600px) {
+            th, td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            tr {
+                margin-bottom: 15px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>レスポンシブ表の例</h1>
+<table>
+    <thead>
+        <tr>
+            <th>項目</th>
+            <th>値</th>
+            <th>説明</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>アイテム1</td>
+            <td>100</td>
+            <td>これはアイテム1の説明です。</td>
+        </tr>
+        <tr>
+            <td>アイテム2</td>
+            <td>200</td>
+            <td>これはアイテム2の説明です。</td>
+        </tr>
+        <tr>
+            <td>アイテム3</td>
+            <td>300</td>
+            <td>これはアイテム3の説明です。</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
